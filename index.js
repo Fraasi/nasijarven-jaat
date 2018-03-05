@@ -1,12 +1,6 @@
-if (typeof InstallTrigger !== 'undefined') {
-	const h3 = document.createElement('h3');
-	h3.style.color = 'white';
-	h3.innerHTML = 'Firefoxilla renderöintiongelmia d3.js:n kanssa, käytä chrome tai ms edge selainta.';
-	document.querySelector('body').insertAdjacentElement('afterbegin', h3);
-}
-
-const width = 500;
-const height = 500;
+const margin = {top: 70, right: 30, bottom: 55, left: 40};
+const width = 500 - margin.right - margin.left;
+const height = 570 - margin.top - margin.bottom;
 const FI = d3.timeFormatLocale({
 	'decimal': '.',
 	'thousands': ',',
@@ -57,8 +51,8 @@ d3.select('#d3-wrapper')
 
 const svg = d3.select('#d3-wrapper')
 	.append('svg')
-	.attr('width', width)
-	.attr('height', height);
+	.attr('width', width + margin.right + margin.left)
+	.attr('height', height + margin.top + margin.bottom);
 
 const yScale = d3.scaleLinear()
 	.domain([1974, 2018])
@@ -69,6 +63,7 @@ const yAxis = d3.axisLeft(yScale)
 
 svg.append('g')
 	.attr('class', 'y-axis')    
+	.attr('transform',  `translate(${margin.left}, ${margin.top})`)
 	.call(yAxis);
 
 const xScale = d3.scaleTime()
@@ -81,7 +76,7 @@ const xAxis = d3.axisBottom(xScale)
 
 svg.append('g')
 	.attr('class', 'x-axis')
-	.attr('transform', `translate(0, ${height})`)
+	.attr('transform', `translate(${margin.left}, ${height + margin.top})`)
 	.call(xAxis);
 
 const avgAxis = d3.axisBottom(xScale)
@@ -92,15 +87,15 @@ const avgAxis = d3.axisBottom(xScale)
 
 svg.append('g')
 	.attr('class', 'avg-axis')
-	.attr('transform', `translate(0, ${height + 30})`)
+	.attr('transform', `translate(${margin.left}, ${height + margin.top + 30})`)
 	.call(avgAxis);
 
 d3.select('.avg-axis')
 	.append('text')
 	.style('fill', 'black')
-	.attr('x', 270)
+	.attr('x', width / 2)
 	.attr('y', 10)
-	.attr('text-anchor', 'middle')
+	.attr('text-anchor', 'start')
 	.text('Keskiarvot');
 
 
@@ -127,16 +122,16 @@ function drawPoint(d, y) {
 		.style('stroke', 'black')
 		.style('stroke-width', '1px')
 		.attr('r', 4)
-		.attr('cx', xScale(d))
-		.attr('cy', yScale(y));
+		.attr('cx', xScale(d) + margin.left)
+		.attr('cy', yScale(y) + margin.top);
 }
 
 function drawLine(start, end, year) {
 	svg.append('line')
-		.attr('x1', xScale(start))
-		.attr('y1', yScale(year))
-		.attr('x2', xScale(end))
-		.attr('y2', yScale(year))
+		.attr('x1', xScale(start) + margin.left)
+		.attr('y1', yScale(year) + margin.top)
+		.attr('x2', xScale(end) + margin.left)
+		.attr('y2', yScale(year) + margin.top)
 		.attr('class', year)
 		.style('opacity', 1)
 		.attr('stroke', 'steelblue')
