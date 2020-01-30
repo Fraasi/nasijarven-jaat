@@ -17,8 +17,8 @@ osmosis
     });
 
 function writeData() {
-    fs.writeFileSync('data.js', 'var data = ');
-    fs.appendFile('data.js', JSON.stringify(data, null, 4), (err) => {
+    fs.writeFileSync('raw-data.js', 'var data = ');
+    fs.appendFile('raw-data.js', JSON.stringify(data, null, 4), (err) => {
         if (err) throw err;
         console.log('\x1b[33m', 'Data was written to data.js.', '\x1b[0m');
     });

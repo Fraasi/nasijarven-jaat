@@ -217,6 +217,16 @@ var data = [
     {
         "vuosi": "2017",
         "lahto": "23.04.",
-        "jaatyminen": "13.01.2018"
+        "jaatyminen": "13.01.18"
+    },
+    {
+        "vuosi": "2018",
+        "lahto": "02.05.",
+        "jaatyminen": "05.01.19"
+    },
+    {
+        "vuosi": "2019",
+        "lahto": "24.04.",
+        "jaatyminen": "05.02.20"
     },
 ]

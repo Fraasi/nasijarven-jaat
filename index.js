@@ -1,4 +1,4 @@
-const margin = {top: 70, right: 30, bottom: 55, left: 40};
+const margin = { top: 70, right: 30, bottom: 55, left: 40 };
 const width = 500 - margin.right - margin.left;
 const height = 570 - margin.top - margin.bottom;
 const FI = d3.timeFormatLocale({
@@ -16,18 +16,20 @@ const FI = d3.timeFormatLocale({
 	'shortMonths': ['Tammi', 'Helmi', 'Maalis', 'Huhti', 'Touko', 'Kesä', 'Heinä', 'Elo', 'Syys', 'Loka', 'Marras', 'Joulu']
 });
 const formatTooltip = FI.format('%d %B');
-const parseTime = d3.timeParse('%d.%m.%Y');
+const parseTime = d3.timeParse('%d,%m,%Y');
 const dataSet = [];
 
 data.forEach((d, i, arr) => {
 	if (i === arr.length - 1) i = i - 1;
-	let endMonth = d.lahto.slice(3, 5);
-	let startMonth = d.jaatyminen.slice(3, 5);
-	let year = startMonth > endMonth ? '1900' : '1901';
+	// get lahto from the next one
+	const [lahtoDay, lahtoMonth] = arr[i + 1].lahto.split('.')
+	const [jaatyminenDay, jaatyminenMonth] = d.jaatyminen.split('.')
+	// keep year 1900 or 1901 for d3.scaletime
+	const JaatyminenFullYear = jaatyminenMonth > lahtoMonth ? '1900' : '1901';
 	dataSet.push({
 		year: Number(d.vuosi),
-		startDate: parseTime(d.jaatyminen.slice(0, 3) + d.jaatyminen.slice(3, 6) + year),
-		endDate: parseTime(arr[i + 1].lahto + '1901')
+		startDate: parseTime(`${jaatyminenDay},${jaatyminenMonth},${JaatyminenFullYear}`),
+		endDate: parseTime(`${lahtoDay},${lahtoMonth},1901`)
 	});
 });
 
@@ -47,7 +49,7 @@ d3.select('#d3-wrapper')
 	.append('xhtml:div')
 	.attr('class', 'title')
 	.style('font-size', '20px')
-	.html('Näsijärven jäätyminen ja jäitten lähtö 1975 - 2017 <br/> <span style="font-size:14px">data: <a href="http://www.rauhaniemi.net/historia/jaiden-lahto/" target="_blank">http://www.rauhaniemi.net/historia/jaiden-lahto/</a></span>');
+	.html('Näsijärven jäätyminen ja jäitten lähtö 1975 - 2019 <br/> <span style="font-size:14px">data: <a href="http://www.rauhaniemi.net/historia/jaiden-lahto/" target="_blank">http://www.rauhaniemi.net/historia/jaiden-lahto/</a></span>');
 
 const svg = d3.select('#d3-wrapper')
 	.append('svg')
@@ -55,15 +57,15 @@ const svg = d3.select('#d3-wrapper')
 	.attr('height', height + margin.top + margin.bottom);
 
 const yScale = d3.scaleLinear()
-	.domain([1974, 2018])
+	.domain([1974, 2020])
 	.range([0, height]);
 
 const yAxis = d3.axisLeft(yScale)
 	.tickFormat(d3.format('d'));
 
 svg.append('g')
-	.attr('class', 'y-axis')    
-	.attr('transform',  `translate(${margin.left}, ${margin.top})`)
+	.attr('class', 'y-axis')
+	.attr('transform', `translate(${margin.left}, ${margin.top})`)
 	.call(yAxis);
 
 const xScale = d3.scaleTime()
@@ -81,7 +83,7 @@ svg.append('g')
 
 const avgAxis = d3.axisBottom(xScale)
 	.tickValues([avgStart, avgEnd])
-	.tickSizeInner(-height - 30) // avgTicks 
+	.tickSizeInner(-height - 30) // avgTicks
 	.tickSizeOuter(-6)
 	.tickFormat(FI.format('%d %B'));
 
@@ -127,6 +129,8 @@ function drawPoint(d, y) {
 }
 
 function drawLine(start, end, year) {
+	const startYear = start.getFullYear() === 1900 ? year : year + 1
+	const endYear = end.getFullYear() === 1900 ? year : year + 1
 	svg.append('line')
 		.attr('x1', xScale(start) + margin.left)
 		.attr('y1', yScale(year) + margin.top)
@@ -139,7 +143,7 @@ function drawLine(start, end, year) {
 		.on('mouseover', function () {
 			d3.select(this).style('opacity', .7);
 			tooltip.transition().style('opacity', .9);
-			tooltip.html(`Näsijärvi jäässä: <br> ${formatTooltip(start)} ${year} - ${formatTooltip(end)} ${start.getMonth() < end.getMonth() ? year : year + 1}`)
+			tooltip.html(`Näsijärvi jäässä: <br> ${formatTooltip(start)} ${startYear} - ${formatTooltip(end)} ${endYear}`)
 				.style('left', d3.event.pageX - 130 + 'px')
 				.style('top', d3.event.pageY + 30 + 'px');
 		})
