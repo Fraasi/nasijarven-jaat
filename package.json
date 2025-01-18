@@ -1,14 +1,18 @@
 {
   "name": "nasi-jaiden-lahto",
   "version": "1.0.0",
+  "private": true,
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "author": "Fraasi",
   "license": "ISC",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
   "devDependencies": {
-    "osmosis": "^1.1.6"
+    "typescript": "~5.6.2",
+    "vite": "^6.0.5"
   }
 }

@@ -1,3 +1,5 @@
+import './index.css'
+
 const margin = { top: 70, right: 30, bottom: 55, left: 40 };
 const width = 500 - margin.right - margin.left;
 const height = 570 - margin.top - margin.bottom;
