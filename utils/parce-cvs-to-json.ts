@@ -61,11 +61,11 @@ const stream = parse<Row, ReturnRow>({ headers: true, delimiter: ';', ignoreEmpt
           delete parsedCsv[key]
         }
       })
-      fs.writeFileSync(path.join(process.cwd(), 'utils', 'dates.json'), JSON.stringify(parsedCsv, null, 2))
-      console.log('parsed & written to json')
+      fs.writeFileSync(path.join(process.cwd(), 'src', 'dates.json'), JSON.stringify(parsedCsv, null, 2))
+      console.log('parsed & written to src/dates.json')
     })
 
-const csv = fs.readFileSync(path.join(process.cwd(), 'utils', 'Jääpeitekauden kesto_SiteID-239504_Downloaded-2025-01-17.csv'), 'utf8');
+const csv = fs.readFileSync(path.join(process.cwd(), 'utils', 'dates.csv'), 'utf8');
 stream.write(csv);
 stream.end();
 
