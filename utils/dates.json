@@ -1,0 +1,2620 @@
+{
+  "1836-1837": {
+    "Jäätyminen": {
+      "Arvo": "27.11.1836",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "8.5.1837",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "162",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1837-1838": {
+    "Jäätyminen": {
+      "Arvo": "13.12.1837",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "21.5.1838",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "159",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1838-1839": {
+    "Jäätyminen": {
+      "Arvo": "8.12.1838",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "16.5.1839",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "159",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1839-1840": {
+    "Jäätyminen": {
+      "Arvo": "3.12.1839",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "8.5.1840",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "156",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1840-1841": {
+    "Jäätyminen": {
+      "Arvo": "23.11.1840",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "6.5.1841",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "164",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1841-1842": {
+    "Jäätyminen": {
+      "Arvo": "31.12.1841",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "7.5.1842",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "127",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1842-1843": {
+    "Jäätyminen": {
+      "Arvo": "24.11.1842",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "25.5.1843",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "182",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1843-1844": {
+    "Jäätyminen": {
+      "Arvo": "17.12.1843",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "8.5.1844",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "142",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1844-1845": {
+    "Jäätyminen": {
+      "Arvo": "3.12.1844",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "23.5.1845",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "171",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1845-1846": {
+    "Jäätyminen": {
+      "Arvo": "17.12.1845",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "18.5.1846",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "152",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1846-1847": {
+    "Jäätyminen": {
+      "Arvo": "13.12.1846",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "14.5.1847",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "152",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1847-1848": {
+    "Jäätyminen": {
+      "Arvo": "3.1.1848",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "27.4.1848",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "114",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1848-1849": {
+    "Jäätyminen": {
+      "Arvo": "18.12.1848",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "18.5.1849",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "151",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1849-1850": {
+    "Jäätyminen": {
+      "Arvo": "7.12.1849",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "12.5.1850",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "156",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1850-1851": {
+    "Jäätyminen": {
+      "Arvo": "10.12.1850",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "15.5.1851",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "156",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1851-1852": {
+    "Jäätyminen": {
+      "Arvo": "27.12.1851",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "25.5.1852",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "149",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1852-1853": {
+    "Jäätyminen": {
+      "Arvo": "12.11.1852",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "11.5.1853",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "180",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1853-1854": {
+    "Jäätyminen": {
+      "Arvo": "29.12.1853",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "12.5.1854",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "134",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1854-1855": {
+    "Jäätyminen": {
+      "Arvo": "24.12.1854",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "14.5.1855",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "141",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1855-1856": {
+    "Jäätyminen": {
+      "Arvo": "2.12.1855",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "23.5.1856",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "172",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1856-1857": {
+    "Jäätyminen": {
+      "Arvo": "24.11.1856",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "14.5.1857",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "171",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1857-1858": {
+    "Jäätyminen": {
+      "Arvo": "27.12.1857",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "18.5.1858",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "142",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1858-1859": {
+    "Jäätyminen": {
+      "Arvo": "19.11.1858",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "26.5.1859",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "188",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1859-1860": {
+    "Jäätyminen": {
+      "Arvo": "16.12.1859",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "6.5.1860",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "141",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1860-1861": {
+    "Jäätyminen": {
+      "Arvo": "5.12.1860",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "15.5.1861",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "161",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1861-1862": {
+    "Jäätyminen": {
+      "Arvo": "17.12.1861",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "18.5.1862",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "152",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1862-1863": {
+    "Jäätyminen": {
+      "Arvo": "14.12.1862",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "7.5.1863",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "144",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1863-1864": {
+    "Jäätyminen": {
+      "Arvo": "28.12.1863",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "18.5.1864",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "141",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1864-1865": {
+    "Jäätyminen": {
+      "Arvo": "21.11.1864",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "19.5.1865",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "179",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1865-1866": {
+    "Jäätyminen": {
+      "Arvo": "6.12.1865",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "15.5.1866",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "160",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1866-1867": {
+    "Jäätyminen": {
+      "Arvo": "11.12.1866",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "17.6.1867",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "188",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1867-1868": {
+    "Jäätyminen": {
+      "Arvo": "30.11.1867",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "15.5.1868",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "166",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1868-1869": {
+    "Jäätyminen": {
+      "Arvo": "29.11.1868",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "11.5.1869",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "163",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1869-1870": {
+    "Jäätyminen": {
+      "Arvo": "24.12.1869",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "6.5.1870",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "133",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1870-1871": {
+    "Jäätyminen": {
+      "Arvo": "1.12.1870",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "28.5.1871",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "178",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1871-1872": {
+    "Jäätyminen": {
+      "Arvo": "1.12.1871",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "5.5.1872",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "155",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1872-1873": {
+    "Jäätyminen": {
+      "Arvo": "18.12.1872",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "20.5.1873",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "153",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1873-1874": {
+    "Jäätyminen": {
+      "Arvo": "12.12.1873",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "1.5.1874",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "140",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1874-1875": {
+    "Jäätyminen": {
+      "Arvo": "12.12.1874",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "20.5.1875",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "159",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1875-1876": {
+    "Jäätyminen": {
+      "Arvo": "26.11.1875",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "25.5.1876",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "180",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1876-1877": {
+    "Jäätyminen": {
+      "Arvo": "20.11.1876",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "31.5.1877",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "192",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1877-1878": {
+    "Jäätyminen": {
+      "Arvo": "6.1.1878",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "12.5.1878",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "126",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1878-1879": {
+    "Jäätyminen": {
+      "Arvo": "20.12.1878",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "15.5.1879",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "146",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1879-1880": {
+    "Jäätyminen": {
+      "Arvo": "25.11.1879",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "11.5.1880",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "167",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1880-1881": {
+    "Jäätyminen": {
+      "Arvo": "2.12.1880",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "25.5.1881",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "174",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1881-1882": {
+    "Jäätyminen": {
+      "Arvo": "23.12.1881",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "8.5.1882",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "136",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1882-1883": {
+    "Jäätyminen": {
+      "Arvo": "18.12.1882",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "13.5.1883",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "146",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1883-1884": {
+    "Jäätyminen": {
+      "Arvo": "9.12.1883",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "13.5.1884",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "155",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1884-1885": {
+    "Jäätyminen": {
+      "Arvo": "21.11.1884",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "15.5.1885",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "175",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1885-1886": {
+    "Jäätyminen": {
+      "Arvo": "20.11.1885",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "9.5.1886",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "170",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1886-1887": {
+    "Jäätyminen": {
+      "Arvo": "20.12.1886",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "6.5.1887",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "137",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1887-1888": {
+    "Jäätyminen": {
+      "Arvo": "15.12.1887",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "24.5.1888",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "160",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1888-1889": {
+    "Jäätyminen": {
+      "Arvo": "15.12.1888",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "15.5.1889",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "151",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1889-1890": {
+    "Jäätyminen": {
+      "Arvo": "20.12.1889",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "20.5.1890",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "151",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1890-1891": {
+    "Jäätyminen": {
+      "Arvo": "24.11.1890",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "15.5.1891",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "172",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1891-1892": {
+    "Jäätyminen": {
+      "Arvo": "25.10.1891",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "20.5.1892",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "207",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1892-1893": {
+    "Jäätyminen": {
+      "Arvo": "15.12.1892",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "22.5.1893",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "158",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1893-1894": {
+    "Jäätyminen": {
+      "Arvo": "4.12.1893",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "30.4.1894",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "147",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1894-1895": {
+    "Jäätyminen": {
+      "Arvo": "22.12.1894",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "11.5.1895",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "140",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1895-1896": {
+    "Jäätyminen": {
+      "Arvo": "20.11.1895",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "5.5.1896",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "166",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1896-1897": {
+    "Jäätyminen": {
+      "Arvo": "10.12.1896",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "6.5.1897",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "147",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1897-1898": {
+    "Jäätyminen": {
+      "Arvo": "30.11.1897",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "15.5.1898",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "166",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1898-1899": {
+    "Jäätyminen": {
+      "Arvo": "11.12.1898",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "20.5.1899",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "160",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1899-1900": {
+    "Jäätyminen": {
+      "Arvo": "2.12.1899",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "24.5.1900",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "173",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1900-1901": {
+    "Jäätyminen": {
+      "Arvo": "26.12.1900",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "9.5.1901",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "134",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1901-1902": {
+    "Jäätyminen": {
+      "Arvo": "21.11.1901",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "28.5.1902",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "188",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1902-1903": {
+    "Jäätyminen": {
+      "Arvo": "25.11.1902",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "2.5.1903",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "158",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1903-1904": {
+    "Jäätyminen": {
+      "Arvo": "15.12.1903",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "4.5.1904",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "140",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1904-1905": {
+    "Jäätyminen": {
+      "Arvo": "20.11.1904",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "12.5.1905",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "173",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1905-1906": {
+    "Jäätyminen": {
+      "Arvo": "18.12.1905",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "1.5.1906",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "134",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1906-1907": {
+    "Jäätyminen": {
+      "Arvo": "13.12.1906",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "11.5.1907",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "149",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1907-1908": {
+    "Jäätyminen": {
+      "Arvo": "12.12.1907",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "20.5.1908",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "159",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1908-1909": {
+    "Jäätyminen": {
+      "Arvo": "25.12.1908",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "30.5.1909",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "156",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1909-1910": {
+    "Jäätyminen": {
+      "Arvo": "29.11.1909",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "21.4.1910",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "143",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1910-1911": {
+    "Jäätyminen": {
+      "Arvo": "7.11.1910",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "6.5.1911",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "180",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1911-1912": {
+    "Jäätyminen": {
+      "Arvo": "4.1.1912",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "14.5.1912",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "130",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1912-1913": {
+    "Jäätyminen": {
+      "Arvo": "14.12.1912",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "7.5.1913",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "144",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1913-1914": {
+    "Jäätyminen": {
+      "Arvo": "14.12.1913",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "29.4.1914",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "136",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1914-1915": {
+    "Jäätyminen": {
+      "Arvo": "2.1.1915",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "8.5.1915",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "126",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1915-1916": {
+    "Jäätyminen": {
+      "Arvo": "26.11.1915",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "9.5.1916",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "164",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1916-1917": {
+    "Jäätyminen": {
+      "Arvo": "20.12.1916",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "21.5.1917",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "152",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1917-1918": {
+    "Jäätyminen": {
+      "Arvo": "16.12.1917",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "6.5.1918",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "141",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1918-1919": {
+    "Jäätyminen": {
+      "Arvo": "24.12.1918",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "3.5.1919",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "130",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1919-1920": {
+    "Jäätyminen": {
+      "Arvo": "24.11.1919",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "25.4.1920",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "152",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1920-1921": {
+    "Jäätyminen": {
+      "Arvo": "29.12.1920",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "16.4.1921",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "108",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1921-1922": {
+    "Jäätyminen": {
+      "Arvo": "21.11.1921",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "10.5.1922",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "170",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1922-1923": {
+    "Jäätyminen": {
+      "Arvo": "22.11.1922",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "13.5.1923",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "172",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1923-1924": {
+    "Jäätyminen": {
+      "Arvo": "19.12.1923",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "17.5.1924",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "149",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1924-1925": {
+    "Jäätyminen": {
+      "Arvo": "27.1.1925",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "19.4.1925",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "82",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1925-1926": {
+    "Jäätyminen": {
+      "Arvo": "27.11.1925",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "15.5.1926",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "169",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1926-1927": {
+    "Jäätyminen": {
+      "Arvo": "15.12.1926",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "21.5.1927",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "157",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1927-1928": {
+    "Jäätyminen": {
+      "Arvo": "20.11.1927",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "9.5.1928",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "170",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1928-1929": {
+    "Jäätyminen": {
+      "Arvo": "16.12.1928",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "18.5.1929",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "153",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1929-1930": {
+    "Jäätyminen": {
+      "Arvo": "30.1.1930",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "19.4.1930",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "79",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1930-1931": {
+    "Jäätyminen": {
+      "Arvo": "18.12.1930",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "8.5.1931",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "141",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1931-1932": {
+    "Jäätyminen": {
+      "Arvo": "11.12.1931",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "7.5.1932",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "147",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1932-1933": {
+    "Jäätyminen": {
+      "Arvo": "13.1.1933",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "10.5.1933",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "117",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1933-1934": {
+    "Jäätyminen": {
+      "Arvo": "12.12.1933",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "3.5.1934",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "142",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1934-1935": {
+    "Jäätyminen": {
+      "Arvo": "22.12.1934",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "2.5.1935",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "131",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1935-1936": {
+    "Jäätyminen": {
+      "Arvo": "5.1.1936",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "1.5.1936",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "116",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1936-1937": {
+    "Jäätyminen": {
+      "Arvo": "8.1.1937",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "23.4.1937",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "105",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1937-1938": {
+    "Jäätyminen": {
+      "Arvo": "9.12.1937",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "3.5.1938",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "145",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1938-1939": {
+    "Jäätyminen": {
+      "Arvo": "26.12.1938",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "6.5.1939",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "131",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1939-1940": {
+    "Jäätyminen": {
+      "Arvo": "21.12.1939",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "15.5.1940",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "145",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1940-1941": {
+    "Jäätyminen": {
+      "Arvo": "13.12.1940",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "30.5.1941",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "168",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1941-1942": {
+    "Jäätyminen": {
+      "Arvo": "17.11.1941",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "16.5.1942",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "180",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1942-1943": {
+    "Jäätyminen": {
+      "Arvo": "30.11.1942",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "21.4.1943",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "142",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1943-1944": {
+    "Jäätyminen": {
+      "Arvo": "5.1.1944",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "8.5.1944",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "123",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1944-1945": {
+    "Jäätyminen": {
+      "Arvo": "31.12.1944",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "28.4.1945",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "118",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1945-1946": {
+    "Jäätyminen": {
+      "Arvo": "8.12.1945",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "7.5.1946",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "150",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1946-1947": {
+    "Jäätyminen": {
+      "Arvo": "14.12.1946",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "13.5.1947",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "150",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1947-1948": {
+    "Jäätyminen": {
+      "Arvo": "15.12.1947",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "21.4.1948",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "127",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1948-1949": {
+    "Jäätyminen": {
+      "Arvo": "9.1.1949",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "28.4.1949",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "109",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1949-1950": {
+    "Jäätyminen": {
+      "Arvo": "30.12.1949",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "28.4.1950",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "119",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1950-1951": {
+    "Jäätyminen": {
+      "Arvo": "29.12.1950",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "1.5.1951",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "123",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1951-1952": {
+    "Jäätyminen": {
+      "Arvo": "14.1.1952",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "28.4.1952",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "104",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1952-1953": {
+    "Jäätyminen": {
+      "Arvo": "29.11.1952",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "24.4.1953",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "146",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1953-1954": {
+    "Jäätyminen": {
+      "Arvo": "30.12.1953",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "9.5.1954",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "130",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1954-1955": {
+    "Jäätyminen": {
+      "Arvo": "31.12.1954",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "22.5.1955",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "142",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1955-1956": {
+    "Jäätyminen": {
+      "Arvo": "5.12.1955",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "15.5.1956",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "161",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1956-1957": {
+    "Jäätyminen": {
+      "Arvo": "21.11.1956",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "10.5.1957",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "170",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1957-1958": {
+    "Jäätyminen": {
+      "Arvo": "12.12.1957",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "17.5.1958",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "156",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1958-1959": {
+    "Jäätyminen": {
+      "Arvo": "12.12.1958",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "24.4.1959",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "133",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1959-1960": {
+    "Jäätyminen": {
+      "Arvo": "12.12.1959",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "11.5.1960",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "150",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1960-1961": {
+    "Jäätyminen": {
+      "Arvo": "8.12.1960",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "3.5.1961",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "146",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1961-1962": {
+    "Jäätyminen": {
+      "Arvo": "23.12.1961",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "4.5.1962",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "132",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1962-1963": {
+    "Jäätyminen": {
+      "Arvo": "18.12.1962",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "8.5.1963",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "141",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1963-1964": {
+    "Jäätyminen": {
+      "Arvo": "9.12.1963",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "11.5.1964",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "153",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1964-1965": {
+    "Jäätyminen": {
+      "Arvo": "3.12.1964",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "1.5.1965",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "149",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1965-1966": {
+    "Jäätyminen": {
+      "Arvo": "13.12.1965",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "14.5.1966",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "152",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1966-1967": {
+    "Jäätyminen": {
+      "Arvo": "16.12.1966",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "6.5.1967",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "141",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1967-1968": {
+    "Jäätyminen": {
+      "Arvo": "11.12.1967",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "27.4.1968",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "137",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1968-1969": {
+    "Jäätyminen": {
+      "Arvo": "8.11.1968",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "7.5.1969",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "180",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1969-1970": {
+    "Jäätyminen": {
+      "Arvo": "7.12.1969",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "13.5.1970",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "157",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1970-1971": {
+    "Jäätyminen": {
+      "Arvo": "24.12.1970",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "9.5.1971",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "136",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1971-1972": {
+    "Jäätyminen": {
+      "Arvo": "9.12.1971",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "12.5.1972",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "154",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1972-1973": {
+    "Jäätyminen": {
+      "Arvo": "12.1.1973",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "2.5.1973",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "110",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1973-1974": {
+    "Jäätyminen": {
+      "Arvo": "26.11.1973",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "14.5.1974",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "169",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1974-1975": {
+    "Jäätyminen": {
+      "Arvo": "8.1.1975",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "1.5.1975",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "113",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1975-1976": {
+    "Jäätyminen": {
+      "Arvo": "17.12.1975",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "14.5.1976",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "148",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1976-1977": {
+    "Jäätyminen": {
+      "Arvo": "17.12.1976",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "7.5.1977",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "141",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1977-1978": {
+    "Jäätyminen": {
+      "Arvo": "23.12.1977",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "14.5.1978",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "142",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1978-1979": {
+    "Jäätyminen": {
+      "Arvo": "4.12.1978",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "11.5.1979",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "158",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1979-1980": {
+    "Jäätyminen": {
+      "Arvo": "11.12.1979",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "3.5.1980",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "143",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1980-1981": {
+    "Jäätyminen": {
+      "Arvo": "29.11.1980",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "20.5.1981",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "172",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1981-1982": {
+    "Jäätyminen": {
+      "Arvo": "11.12.1981",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "1.5.1982",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "141",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1982-1983": {
+    "Jäätyminen": {
+      "Arvo": "17.1.1983",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "1.5.1983",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "104",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1983-1984": {
+    "Jäätyminen": {
+      "Arvo": "1.12.1983",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "3.5.1984",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "153",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1984-1985": {
+    "Jäätyminen": {
+      "Arvo": "29.12.1984",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "19.5.1985",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "141",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1985-1986": {
+    "Jäätyminen": {
+      "Arvo": "3.12.1985",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "5.5.1986",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "153",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1986-1987": {
+    "Jäätyminen": {
+      "Arvo": "18.12.1986",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "10.5.1987",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "143",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1987-1988": {
+    "Jäätyminen": {
+      "Arvo": "10.12.1987",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "12.5.1988",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "153",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1988-1989": {
+    "Jäätyminen": {
+      "Arvo": "1.12.1988",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "18.4.1989",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "138",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1989-1990": {
+    "Jäätyminen": {
+      "Arvo": "10.12.1989",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "16.4.1990",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "127",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1990-1991": {
+    "Jäätyminen": {
+      "Arvo": "22.12.1990",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "23.4.1991",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "122",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1991-1992": {
+    "Jäätyminen": {
+      "Arvo": "11.1.1992",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "1.5.1992",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "110",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1992-1993": {
+    "Jäätyminen": {
+      "Arvo": "23.11.1992",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "2.5.1993",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "160",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1993-1994": {
+    "Jäätyminen": {
+      "Arvo": "11.12.1993",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "6.5.1994",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "146",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1994-1995": {
+    "Jäätyminen": {
+      "Arvo": "6.1.1995",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "4.5.1995",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "118",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1995-1996": {
+    "Jäätyminen": {
+      "Arvo": "3.12.1995",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "9.5.1996",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "157",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1996-1997": {
+    "Jäätyminen": {
+      "Arvo": "22.12.1996",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "10.5.1997",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "139",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1997-1998": {
+    "Jäätyminen": {
+      "Arvo": "18.12.1997",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "3.5.1998",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "136",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1998-1999": {
+    "Jäätyminen": {
+      "Arvo": "19.11.1998",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "25.4.1999",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "157",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "1999-2000": {
+    "Jäätyminen": {
+      "Arvo": "16.12.1999",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "28.4.2000",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "133",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "2000-2001": {
+    "Jäätyminen": {
+      "Arvo": "22.1.2001",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "30.4.2001",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "98",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "2001-2002": {
+    "Jäätyminen": {
+      "Arvo": "17.12.2001",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "26.4.2002",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "130",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "2002-2003": {
+    "Jäätyminen": {
+      "Arvo": "4.12.2002",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "13.5.2003",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "160",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "2003-2004": {
+    "Jäätyminen": {
+      "Arvo": "1.1.2004",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "27.4.2004",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "116",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "2004-2005": {
+    "Jäätyminen": {
+      "Arvo": "16.1.2005",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "30.4.2005",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "104",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "2005-2006": {
+    "Jäätyminen": {
+      "Arvo": "21.12.2005",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "7.5.2006",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "137",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "2006-2007": {
+    "Jäätyminen": {
+      "Arvo": "23.1.2007",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "16.4.2007",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "83",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "2007-2008": {
+    "Jäätyminen": {
+      "Arvo": "31.1.2008",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "23.4.2008",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "82",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "2008-2009": {
+    "Jäätyminen": {
+      "Arvo": "3.1.2009",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "30.4.2009",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "117",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "2009-2010": {
+    "Jäätyminen": {
+      "Arvo": "18.12.2009",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "29.4.2010",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "132",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "2010-2011": {
+    "Jäätyminen": {
+      "Arvo": "29.11.2010",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "1.5.2011",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "153",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "2011-2012": {
+    "Jäätyminen": {
+      "Arvo": "10.1.2012",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "1.5.2012",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "111",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "2012-2013": {
+    "Jäätyminen": {
+      "Arvo": "21.12.2012",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "3.5.2013",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "133",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "2013-2014": {
+    "Jäätyminen": {
+      "Arvo": "14.1.2014",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "13.4.2014",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "89",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "2014-2015": {
+    "Jäätyminen": {
+      "Arvo": "30.12.2014",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "13.4.2015",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "104",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "2015-2016": {
+    "Jäätyminen": {
+      "Arvo": "7.1.2016",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "19.4.2016",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "102",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "2016-2017": {
+    "Jäätyminen": {
+      "Arvo": "13.12.2016",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "23.4.2017",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "131",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "2017-2018": {
+    "Jäätyminen": {
+      "Arvo": "13.1.2018",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "2.5.2018",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "109",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "2018-2019": {
+    "Jäätyminen": {
+      "Arvo": "5.1.2019",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "24.4.2019",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "109",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "2019-2020": {
+    "Jäätyminen": {
+      "Arvo": "26.2.2020",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "9.4.2020",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "42",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "2020-2021": {
+    "Jäätyminen": {
+      "Arvo": "15.1.2021",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "21.4.2021",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "96",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "2021-2022": {
+    "Jäätyminen": {
+      "Arvo": "8.12.2021",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "9.5.2022",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "152",
+      "Arvon tyyppi": "päivää"
+    }
+  },
+  "2022-2023": {
+    "Jäätyminen": {
+      "Arvo": "5.1.2023",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jäänlähtö": {
+      "Arvo": "28.4.2023",
+      "Arvon tyyppi": "Päivämäärä"
+    },
+    "Jääpeitekauden kesto": {
+      "Arvo": "113",
+      "Arvon tyyppi": "päivää"
+    }
+  }
+}
