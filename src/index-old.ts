@@ -26,23 +26,31 @@ type Dataset = Array<{
 }>
 const dataSet: Dataset = []
 
-type Data =   {
-    "Talvi": string, // "1836-1837",
-    "Jäätyminen": string, // "27.11.1836",
-    "Jäänlähtö": string, // "8.5.1837",
-    "Jääpeitekauden kesto": string // "162"
-  }
+// const exampleDates = {
+// "Jäätyminen": {
+//   "Arvo": "5.1.2023",
+//   "Arvon tyyppi": "Päivämäärä"
+// },
+// "Jäänlähtö": {
+//   "Arvo": "28.4.2023",
+//   "Arvon tyyppi": "Päivämäärä"
+// },
+// "Jääpeitekauden kesto": {
+//   "Arvo": "113",
+//   "Arvon tyyppi": "päivää"
+// }
+// }
 
-let earliestYear = d3.min(dates, (d) => Number(d.Talvi.split('-')[0])) as number
-let latestYear = d3.max(dates, (d) => Number(d.Talvi.split('-')[1])) as number
+let earliestYear: number = 2000
+let latestYear: number = 2000
 
-dates.forEach((data: Data) => {
-  const year = Number(data.Talvi.split('-')[0])
+Object.entries(dates).forEach(([years, data]) => {
+  const year = Number(years.split('-')[0])
   if (year < earliestYear) earliestYear = year
   if (year > latestYear) latestYear = year
   // keep year 1900 or 1901 for d3.scaletime, other everything except 1900 is off the charts
-  let [frozeDay, frozeMonth, frozeYear] = data['Jäätyminen'].split('.')
-  let [meltDay, meltMonth, meltYear] = data['Jäänlähtö'].split('.')
+  let [frozeDay, frozeMonth, frozeYear] = data['Jäätyminen'].Arvo.split('.')
+  let [meltDay, meltMonth, meltYear] = data['Jäänlähtö'].Arvo.split('.')
 
 
 
@@ -56,7 +64,7 @@ dates.forEach((data: Data) => {
     year,
     startDate: parseTime(`${frozeDay}.${frozeMonth}.${frozeFullYear}`),
     endDate: parseTime(`${meltDay}.${meltMonth}.1901`),
-    duration: data['Jääpeitekauden kesto']
+    duration: data['Jääpeitekauden kesto'].Arvo
   })
 })
 
@@ -98,15 +106,13 @@ svg.append('g')
   .attr('transform', `translate(${margin.left}, ${margin.top})`)
   .call(yAxis)
 
-const xScale = d3.scaleLinear()
-  // .domain([new Date(1900, 10), new Date(1901, 5)])
-  .domain([10, 5]) // months
+const xScale = d3.scaleTime()
+  .domain([new Date(1900, 10), new Date(1901, 5)])
   .range([0, width])
 
 const xAxis = d3.axisBottom(xScale)
-  .ticks([0,1])
-  // .ticks(d3.timeMonth.every(1))
-  // .tickFormat(FI.format('%b'))
+  .ticks(d3.timeMonth.every(1))
+  .tickFormat(FI.format('%b'))
 
 svg.append('g')
   .attr('class', 'x-axis')
@@ -117,7 +123,7 @@ const avgAxis = d3.axisBottom(xScale)
   .tickValues([avgStart, avgEnd])
   .tickSizeInner(-height - 30) // avgTicks
   .tickSizeOuter(-6)
-  // .tickFormat(FI.format('%d %B'))
+  .tickFormat(FI.format('%d %B'))
 
 svg.append('g')
   .attr('class', 'avg-axis')
@@ -133,11 +139,11 @@ d3.select('.avg-axis')
   .text('Keskiarvot')
 
 
-dataSet.forEach(function (d: Data, i, arr) {
+dataSet.forEach(function (d, i, arr) {
   if (i < arr.length - 1) {
   drawLine(d)
-  drawPoint(d)
-  drawPoint(d)
+  drawPoint(d.startDate, d.year)
+  drawPoint(d.endDate, d.year)
   }
 })
 
@@ -161,15 +167,13 @@ function drawPoint(date: Date, year: number) {
     .attr('cy', yScale(year) + margin.top)
 }
 
-function drawLine(data: Data) {
+function drawLine(data: { startDate: Date; endDate: Date; year: number; duration: string }) {
   // console.log('data:', data)
   // const startYear = start.getFullYear() === 1900 ? year : year + 1
   // const endYear = end.getFullYear() === 1900 ? year : year + 1
-  const { Jäätyminen, Jäänlähtö, "Jääpeitekauden kesto" } = data
-  // @ts-ignore
-  const startYear = parseTime(Jaanlähtö).getFullYear()
-  // @ts-ignore
-  const endYear = parseTime(Jäätyminen).getFullYear()
+  const { startDate, endDate, year, duration } = data
+  const startYear = startDate.getFullYear()
+  const endYear = endDate.getFullYear()
   svg.append('line')
     .attr('x1', xScale(startDate) + margin.left)
     .attr('y1', yScale(year) + margin.top)
