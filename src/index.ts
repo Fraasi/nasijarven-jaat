@@ -1,226 +1,228 @@
-//@ts-ignore
 import './index.css' with { type: 'css' }
-import dates from './dates.json' with { type: 'json' }
+import dataset from './dates.json' with { type: 'json' }
 import * as d3 from 'd3'
 
-const margin = { top: 70, right: 30, bottom: 55, left: 40 }
-const width = 500 - margin.right - margin.left
-const height = 1800 - margin.top - margin.bottom
-const FI = d3.timeFormatLocale({
-  'dateTime': '%a %b %e %X %Y',
-  'date': '%m/%d/%Y',
-  'time': '%H:%M:%S',
-  'periods': ['AM', 'PM'],
-  'days': ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
-  'shortDays': ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
-  'months': ['Tammikuu', 'Helmikuu', 'Maaliskuu', 'Huhtikuu', 'Toukokuu', 'Kesäkuu', 'Heinäkuu', 'Elokuu', 'Syyskuu', 'Lokakuu', 'Marraskuu', 'Joulukuu'],
-  'shortMonths': ['Tammi', 'Helmi', 'Maalis', 'Huhti', 'Touko', 'Kesä', 'Heinä', 'Elo', 'Syys', 'Loka', 'Marras', 'Joulu']
-})
-const formatTooltip = FI.format('%d %B')
-const parseTime = d3.timeParse('%d.%m.%Y')
-type DateType = {
-  year: number
-  startDate: Date
-  endDate: Date
-  duration: string
-}
-type Dataset = Array<DateType>
-const dataSet: Dataset = []
-
-type Data = {
-  "Talvi": string, // "1836-1837",
-  "Jäätyminen": string, // "27.11.1836",
-  "Jäänlähtö": string, // "8.5.1837",
-  "Jääpeitekauden kesto": string // "162"
+interface IceData {
+    "Talvi": string;
+    "Jäätyminen": string;
+    "Jäänlähtö": string;
+    "Jääpeitekauden_kesto": string;
 }
 
-let earliestYear = d3.min(dates, (d) => Number(d.Talvi.split('-')[0])) as number
-let latestYear = d3.max(dates, (d) => Number(d.Talvi.split('-')[1])) as number
+// Convert date strings to Date objects and handle year transitions
+function parseDate(dateStr: string, winterYear: string): Date {
+  const [day, month] = dateStr.split('.');
+  let dateYear = parseInt(winterYear);
+  
+  // If month is 10-12, it's from the start of winter season
+  const monthNum = parseInt(month);
+  if (monthNum >= 10) {
+    dateYear = parseInt(winterYear);
+  } else {
+    // For months 1-4, it's from the next year
+    dateYear = parseInt(winterYear) + 1;
+  }
+  return new Date(dateYear, monthNum - 1, parseInt(day));
+}
 
-dates.forEach((data: Data) => {
-  const year = Number(data.Talvi.split('-')[0])
-  if (year < earliestYear) earliestYear = year
-  if (year > latestYear) latestYear = year
-  // keep year 1900 or 1901 for d3.scaletime, other everything except 1900 is off the charts
-  let [frozeDay, frozeMonth, frozeYear] = data['Jäätyminen'].split('.')
-  let [meltDay, meltMonth, meltYear] = data['Jäänlähtö'].split('.')
+// Process the data
+const processedData = dataset.map((d: IceData) => {
+  const winterYear = d.Talvi.split('-')[0]; // Get the first year from "YYYY-YYYY" format
+  return {
+    year: parseInt(winterYear),
+    freezeDate: parseDate(d.Jäätyminen, winterYear),
+    meltDate: parseDate(d.Jäänlähtö, winterYear),
+    duration: Number(d.Jääpeitekauden_kesto)
+  };
+});
 
-  const frozeFullYear = frozeYear === meltYear ? '1901' : '1900'
-  // console.log("🚀 ~ Object.entries ~ jäätyminen:", jäätyminen)
+// Set up dimensions
+const margin = { top: 100, right: 30, bottom: 50, left: 50 };
+const width = 500 - margin.left - margin.right;
+const heightPerYear = 10; // pixels per year
+const height = (processedData.length * heightPerYear) - margin.top - margin.bottom;
 
-  // const jäänlähto = data['Jäänlähtö'].Arvo
-  // const JaatyminenFullYear = jaatyminenMonth > lahtoMonth ? '1900' : '1901';
+const years = Array.from(new Set(processedData.map(d => d.year)));
+const earliestYear = d3.min(years)!;
+const latestYear = d3.max(years)!;
 
-  dataSet.push({
-    year,
-    startDate: parseTime(`${frozeDay}.${frozeMonth}.${frozeFullYear}`) as Date,
-    endDate: parseTime(`${meltDay}.${meltMonth}.1901`) as Date,
-    duration: data['Jääpeitekauden kesto']
-  })
-})
-
-console.log('dataSet:', dataSet)
-
-//count avgs
-let avgCount = 0
-let avgStarts = 0
-let avgEnds = 0
-dataSet.forEach((d) => {
-  avgStarts += d.startDate.getTime()
-  avgEnds += d.endDate.getTime()
-  avgCount++
-})
-const avgStart = new Date((avgStarts / avgCount))
-const avgEnd = new Date((avgEnds / avgCount))
-
-d3.select('#d3-wrapper')
-  .append('xhtml:div')
-  .attr('class', 'title')
-  .style('font-size', '20px')
-  //TODO; add buttons for years???
-  .html(`Näsijärven jäätyminen ja jäitten lähtö ${earliestYear} - ${latestYear} <br/> <span style="font-size:14px">data: <a href="https://www.jarviwiki.fi/wiki/N%C3%A4sij%C3%A4rvi_(yhd.)/Ymp%C3%A4rist%C3%B6hallinnon_havaintopaikka_(Naistenlahti)" target="_blank">järviwiki</a></span>`)
-
+// Create SVG
 const svg = d3.select('#d3-wrapper')
   .append('svg')
-  .attr('width', width + margin.right + margin.left)
+  .attr('width', width + margin.left + margin.right)
   .attr('height', height + margin.top + margin.bottom)
+  .append('g')
+  .attr('transform', `translate(${margin.left},${margin.top})`);
 
+// Add title
+svg.append('text')
+  .attr('class', 'chart-title')
+  .attr('x', width / 2)
+  .attr('y', -margin.top + 35)
+  .attr('text-anchor', 'middle')
+  .style('font-size', '20px')
+  .text(`Näsijärven jäätyminen ja jäänlähtö ${earliestYear} - ${latestYear}`);
+
+// Add subtitle (data source)
+svg.append('text')
+  .attr('class', 'chart-subtitle')
+  .attr('x', width / 2)
+  .attr('y', -margin.top + 65)
+  .attr('text-anchor', 'middle')
+  .style('font-size', '14px')
+  .html('data: <a href="https://www.jarviwiki.fi/wiki/N%C3%A4sij%C3%A4rvi_(yhd.)/Ymp%C3%A4rist%C3%B6hallinnon_havaintopaikka_(Naistenlahti)" target="_blank">järviwiki</a>');
+
+// Create scales
 const yScale = d3.scaleLinear()
   .domain([earliestYear, latestYear])
-  .range([0, height])
+  .range([height, 0]);
 
-const yAxis = d3.axisLeft(yScale)
-  .tickFormat(d3.format('d'))
-
-svg.append('g')
-  .attr('class', 'y-axis')
-  .attr('transform', `translate(${margin.left}, ${margin.top})`)
-  .call(yAxis)
-
+// Create a custom time scale for October to May
 const xScale = d3.scaleTime()
-  .domain([new Date(1900, 10), new Date(1901, 5)])
-  .range([0, width])
-xScale.clamp(true)
+  .domain([new Date(2000, 9, 15), new Date(2001, 5, 15)]) // Oct 15 to Jun 15
+  .range([0, width]);
 
-const xAxis = d3.axisBottom(xScale)
-  .ticks([0, 1])
-  .ticks(d3.timeMonth.every(1))
-  // .tickFormat(FI.format('%b'))
-
-svg.append('g')
-  .attr('class', 'x-axis')
-  .attr('transform', `translate(${margin.left}, ${height + margin.top})`)
-  .call(xAxis)
-
-const avgAxis = d3.axisBottom(xScale)
-  .tickValues([avgStart, avgEnd])
-  .tickSizeInner(-height - 30) // avgTicks
-  .tickSizeOuter(-6)
-// .tickFormat(FI.format('%d %B'))
-
-svg.append('g')
-  .attr('class', 'avg-axis')
-  .attr('transform', `translate(${margin.left}, ${height + margin.top + 30})`)
-  .call(avgAxis)
-
-d3.select('.avg-axis')
-  .append('text')
-  .style('fill', 'black')
-  .attr('x', width / 2)
-  .attr('y', 10)
-  .attr('text-anchor', 'start')
-  .text('Keskiarvot')
-
-
-dataSet.forEach(function (d: DateType, i, arr) {
-//   // if (i < arr.length - 1) {
-    drawLine(d)
-    drawPoint(d, d.startDate)
-    drawPoint(d, d.endDate)
-//   // }
-})
-// try this
- // svg.selectAll('circle')
- //    .data(dataSet)
- //    .enter()
- //    .append('circle')
- //      .attr('cx', d => xScale(d.startDate))
- //      .attr('cy', d => yScale(d.year))
- //      .attr('r', 5)
- //      .attr('fill', 'purple')
-
- // svg.selectAll('circle')
- //    .data(dataSet)
- //    .enter()
- //    .append('circle')
- //      .attr('cx', d => xScale(d.endDate))
- //      .attr('cy', d => yScale(d.year))
- //      .attr('r', 5)
- //      .attr('fill', 'green')
-    // .append('line')
-    //   .attr('cx', d => xScale(d.startDate))
-    //   .attr('cy', 20)
-    //   .attr('r', 10)
-    //   .attr('fill', 'purple')
-
-const tooltip = d3.select('#d3-wrapper')
-  .append('div')
-  .style('position', 'absolute')
-  .style('opacity', 0)
-  .style('background', '#DEE3E3')
-  .style('padding', '10px 15px')
-  .style('border-radius', '10px')
-  .style('border', '1px solid black')
-
-function drawPoint(date: DateType, year: Date) {
-  // console.log('date:', date)
-  svg.append('circle')
-    .style('fill', 'blue')
-    .style('stroke', 'black')
-    .style('stroke-width', '1px')
-    .attr('r', 4)
-    .attr('cx', xScale(date.startDate) + margin.left)
-    .attr('cy', yScale(year) + margin.top)
+// Finnish month abbreviations
+const finnishMonths: { [key: string]: string } = {
+  'Jan': 'tammi',
+  'Feb': 'helmi',
+  'Mar': 'maalis',
+  'Apr': 'huhti',
+  'May': 'touko',
+  'Jun': 'kesä',
+  'Jul': 'heinä',
+  'Aug': 'elo',
+  'Sep': 'syys',
+  'Oct': 'loka',
+  'Nov': 'marras',
+  'Dec': 'joulu'
 };
 
-function drawLine(data: DateType) {
-  // console.log('data:', data)
-  // const startYear = start.getFullYear() === 1900 ? year : year + 1
-  // const endYear = end.getFullYear() === 1900 ? year : year + 1
+const xAxis = d3.axisBottom(xScale)
+  .tickFormat((d) => finnishMonths[d3.timeFormat('%b')(d as Date)] || '')
+  .tickSizeInner(-height) // Add gridlines
+  .tickPadding(8);       // Reduce padding
 
-  const { startDate, endDate, year, duration } = data
-  console.log("🚀 ~ drawLine ~ data:", data)
-  const startYear = startDate.getFullYear()
-  const endYear = endDate.getFullYear()
-  const line = d3.line()
-    .x((d) => xScale(d.startdate))
-    .y((d) => yScale(d.year));
+const xAxisTop = d3.axisTop(xScale)
+  .tickFormat((d) => finnishMonths[d3.timeFormat('%b')(d as Date)] || '')
+  .tickSizeInner(-height) // Add gridlines
+  .tickPadding(8);       // Reduce padding
 
-  svg.append("path")
-    .attr("d", line(data))
-    .attr("stroke", "currentColor");
+const yAxis = d3.axisLeft(yScale)
+  .tickFormat(d => d.toString())  // Show full year
+  .tickSizeInner(-width)  // Add gridlines
+  .tickPadding(4);       // Reduce padding
 
-  // svg.append('line')
-  //   .attr('x1', xScale(startDate) + margin.left)
-  //   .attr('x2', xScale(endDate) + margin.left)
-  //   .attr('y1', yScale(year) + margin.top)
-  //   .attr('y2', yScale(year) + margin.top)
-  //   .attr('class', year)
-  //   .style('opacity', 1)
-  //   .attr('stroke', 'steelblue')
-  //   .attr('stroke-width', 8)
-  //   .on('mouseover', function (e) {
-  //     console.log("🚀 ~ d:", e)
-  //     d3.select(this).style('opacity', .7)
-  //     tooltip.transition().style('opacity', .9)
-  //     tooltip.html(`Näsijärvi jäässä ${duration} päivää <br> ${formatTooltip(startDate)} ${startYear} - ${formatTooltip(endDate)} ${endYear}`)
-  //       // @ts-ignore
-  //       .style('left', e.x - 130 + 'px')
-  //       // @ts-ignore
-  //       .style('top', e.y + 'px')
-  //   })
-  //   .on('mouseout', function () {
-  //     d3.select(this).style('opacity', 1)
-  //     tooltip.transition().style('opacity', 0)
-  //   })
-}
+// Add axes to chart
+svg.append('g')
+  .attr('class', 'y-axis')
+  .call(yAxis)
+  .call(g => g.selectAll('.tick text')
+    .style('font-size', '10px')); // Keep small font size but remove dx offset
+
+// Add bottom x-axis
+svg.append('g')
+  .attr('class', 'x-axis bottom')
+  .attr('transform', `translate(0,${height})`)
+  .call(xAxis);
+
+// Add top x-axis
+svg.append('g')
+  .attr('class', 'x-axis top')
+  .call(xAxisTop);
+
+// Create tooltip div
+const tooltip = d3.select('#d3-wrapper')
+  .append('div')
+  .attr('class', 'tooltip')
+  .style('opacity', 0)
+  .style('position', 'absolute')
+  .style('pointer-events', 'none')
+  .style('background', 'rgba(255, 255, 255, 0.9)')
+  .style('padding', '8px')
+  .style('border', '1px solid #ccc')
+  .style('border-radius', '4px')
+  .style('font-size', '12px')
+  .style('box-shadow', '0 1px 4px rgba(0,0,0,0.1)');
+
+// Format date for tooltip
+const formatDate = d3.timeFormat('%d.%m.%Y');
+
+// Add lines for each winter season
+processedData.forEach(d => {
+  const year = d.year;
+  
+  // Normalize dates to the same year for proper x-axis placement
+  const normalizedFreeze = new Date(
+    d.freezeDate.getMonth() < 5 ? 2001 : 2000,  // If month is before May, use 2001
+    d.freezeDate.getMonth(),
+    d.freezeDate.getDate()
+  );
+  const normalizedMelt = new Date(2001, d.meltDate.getMonth(), d.meltDate.getDate());
+
+  // Calculate duration in days
+  const durationDays = Math.round((d.meltDate.getTime() - d.freezeDate.getTime()) / (1000 * 60 * 60 * 24));
+
+  // Create a group for the line and circles
+  const lineGroup = svg.append('g');
+
+  // Add the line
+  lineGroup.append('line')
+    .attr('x1', xScale(normalizedFreeze))
+    .attr('y1', yScale(year))
+    .attr('x2', xScale(normalizedMelt))
+    .attr('y2', yScale(year))
+    .attr('stroke', '#2196F3')
+    .attr('stroke-width', 6);
+
+  // Add start circle
+  lineGroup.append('circle')
+    .attr('cx', xScale(normalizedFreeze))
+    .attr('cy', yScale(year))
+    .attr('r', 4)
+    .attr('fill', '')
+    .style('stroke', 'white')
+    .style('stroke-width', '1px')
+
+  // Add end circle
+  lineGroup.append('circle')
+    .attr('cx', xScale(normalizedMelt))
+    .attr('cy', yScale(year))
+    .attr('r', 4)
+    .attr('fill', 'darkblue')
+    .style('stroke', 'white')
+    .style('stroke-width', '1px')
+
+  // Add tooltip behavior to the group
+  lineGroup
+    .on('mouseover', (event) => {
+      tooltip.transition()
+        .duration(200)
+        .style('opacity', 1);
+      tooltip.html(`Talvi <span class="tooltip-value">${year}-${year+1}</span><br/>` +
+                  `Jäätyminen: <span class="tooltip-value">${formatDate(d.freezeDate)}</span><br/>` +
+                  `Jäänlähtö: <span class="tooltip-value">${formatDate(d.meltDate)}</span><br/>` +
+                  `Jääpeitekauden kesto: <span class="tooltip-value">${durationDays}</span>`)
+        .style('left', (event.pageX + 10) + 'px')
+        .style('top', (event.pageY - 28) + 'px');
+    })
+    .on('mouseout', () => {
+      tooltip.transition()
+        .duration(500)
+        .style('opacity', 0);
+    });
+});
+
+// Add labels
+svg.append('text')
+  .attr('transform', 'rotate(-90)')
+  .attr('y', 0 - margin.left)
+  .attr('x', 0 - (height / 2))
+  .attr('dy', '1em')
+  .style('text-anchor', 'middle')
+  .text('Vuosi');
+
+svg.append('text')
+  .attr('transform', `translate(${width/2}, ${height + margin.bottom - 10})`)
+  .style('text-anchor', 'middle')
+  .text('Kuukausi');

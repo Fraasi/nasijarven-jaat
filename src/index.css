@@ -9,6 +9,10 @@ body {
     margin: -25px auto 0px auto;
 }
 
+#d3-wrapper svg {
+  margin-top: 20px;
+}
+
 svg {
     background: white;
     opacity: 0.75;
@@ -20,8 +24,9 @@ svg {
     text-align: center;
     position: relative;
     left: 15px;
-    top: 55px;
-    z-index: 5;
+    top: 15px;
+    z-index: 1;
+    margin-bottom: 10px;
 }
 
 .unsplash, .unsplash a, .unsplash:visited {
@@ -29,4 +34,14 @@ svg {
     color: white;
     width: 360px;
     margin: 10px auto;
+}
+
+.tooltip-value {
+  float: right;
+  margin-left: 10px;
+  font-weight: 500;
+}
+
+.chart-subtitle {
+  margin-bottom: 20px;
 }

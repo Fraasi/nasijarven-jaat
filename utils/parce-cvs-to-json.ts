@@ -20,10 +20,10 @@ const exampleData = {
   }
 }
 type FinalJson = Array<{
- 'Talvi': string
- "Jäätyminen": string
- "Jaanlähtö": string
- "Jääpeitekauden kesto": string
+  'Talvi': string
+  "Jäätyminen": string
+  "Jaanlähtö": string
+  "Jääpeitekauden_kesto": string
 }>
 
 type Parsed = keyof typeof exampleData | {}
@@ -44,7 +44,7 @@ type ReturnRow = Row & {}
 const stream = parse<Row, ReturnRow>({ headers: true, delimiter: ';', ignoreEmpty: true })
   .transform((data: Row) => {
     if (parsedCsv[data['Talvi']]) {
-      parsedCsv[data['Talvi']][data['Havainto']] =  data['Arvo']
+      parsedCsv[data['Talvi']][data['Havainto']] = data['Arvo']
     } else {
       parsedCsv[data['Talvi']] = {
         'Talvi': data['Talvi'],
@@ -63,8 +63,12 @@ const stream = parse<Row, ReturnRow>({ headers: true, delimiter: ';', ignoreEmpt
         console.log(`deleted ${key} - no 'Jääpeitekauden kesto'`)
         delete parsedCsv[key]
       } else {
-      // make object an array of objects for d3
-        finalJson.push(parsedCsv[key])
+        // make object an array of objects for d3
+        // replace whitespace with underscore in 'Jääpeitekauden kesto' key
+        const fixed = parsedCsv[key]
+        fixed.Jääpeitekauden_kesto = fixed['Jääpeitekauden kesto']
+        delete fixed['Jääpeitekauden kesto']
+        finalJson.push(fixed)
       }
     })
     fs.writeFileSync(path.join(process.cwd(), 'src', 'dates.json'), JSON.stringify(finalJson, null, 2))
