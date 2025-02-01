@@ -1,12 +1,12 @@
 body {
-    background: url('./nathan-anderson-235539-unsplash.jpg');
+    background: url('/img/nathan-anderson-235539-unsplash.jpg');
     background-size: cover;
     margin: 0px;
 }
 
 #d3-wrapper {
     width: 500px;
-    margin: -25px auto 0px auto;
+    margin: 0 auto 0 auto;
     max-width: 800px;
 }
 
