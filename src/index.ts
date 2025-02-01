@@ -44,7 +44,7 @@ const height = (processedData.length * heightPerYear) - margin.top - margin.bott
 
 const years = Array.from(new Set(processedData.map(d => d.year)));
 const earliestYear = d3.min(years)!;
-const latestYear = d3.max(years)!;
+const latestYear = d3.max(years)! + 1;
 
 // Create SVG
 const svg = d3.select('#d3-wrapper')
@@ -74,7 +74,7 @@ svg.append('text')
 
 // Create scales
 const yScale = d3.scaleLinear()
-  .domain([earliestYear, latestYear])
+  .domain([earliestYear - 1, latestYear]) // -1 adds space to bottom here
   .range([height, 0]);
 
 // Create a custom time scale for October to May
