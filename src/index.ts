@@ -173,7 +173,8 @@ processedData.forEach(d => {
     .attr('x2', xScale(normalizedMelt))
     .attr('y2', yScale(year))
     .attr('stroke', '#2196F3')
-    .attr('stroke-width', 6);
+    .attr('stroke-width', 6)
+    .style('transition', 'stroke 0.2s ease');  // Add smooth transition
 
   // Add start circle
   lineGroup.append('circle')
@@ -205,11 +206,17 @@ processedData.forEach(d => {
                   `Jääpeitekauden kesto: <span class="tooltip-value">${durationDays}</span>`)
         .style('left', (event.pageX + 10) + 'px')
         .style('top', (event.pageY - 28) + 'px');
+      
+      lineGroup.select('line')
+        .attr('stroke', 'darkblue');
     })
     .on('mouseout', () => {
       tooltip.transition()
         .duration(500)
         .style('opacity', 0);
+      
+      lineGroup.select('line')
+        .attr('stroke', '#2196F3');
     });
 });
 
