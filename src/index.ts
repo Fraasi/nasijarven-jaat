@@ -13,7 +13,7 @@ interface IceData {
 function parseDate(dateStr: string, winterYear: string): Date {
   const [day, month] = dateStr.split('.');
   let dateYear = parseInt(winterYear);
-  
+
   // If month is 10-12, it's from the start of winter season
   const monthNum = parseInt(month);
   if (monthNum >= 10) {
@@ -151,7 +151,7 @@ const formatDate = d3.timeFormat('%d.%m.%Y');
 // Add lines for each winter season
 processedData.forEach(d => {
   const year = d.year;
-  
+
   // Normalize dates to the same year for proper x-axis placement
   const normalizedFreeze = new Date(
     d.freezeDate.getMonth() < 5 ? 2001 : 2000,  // If month is before May, use 2001
@@ -159,9 +159,6 @@ processedData.forEach(d => {
     d.freezeDate.getDate()
   );
   const normalizedMelt = new Date(2001, d.meltDate.getMonth(), d.meltDate.getDate());
-
-  // Calculate duration in days
-  const durationDays = Math.round((d.meltDate.getTime() - d.freezeDate.getTime()) / (1000 * 60 * 60 * 24));
 
   // Create a group for the line and circles
   const lineGroup = svg.append('g');
@@ -180,7 +177,7 @@ processedData.forEach(d => {
   lineGroup.append('circle')
     .attr('cx', xScale(normalizedFreeze))
     .attr('cy', yScale(year))
-    .attr('r', 4)
+   .attr('r', 4)
     .attr('fill', '')
     .style('stroke', 'white')
     .style('stroke-width', '1px')
@@ -203,10 +200,10 @@ processedData.forEach(d => {
       tooltip.html(`Talvi <span class="tooltip-value">${year}-${year+1}</span><br/>` +
                   `Jäätyminen: <span class="tooltip-value">${formatDate(d.freezeDate)}</span><br/>` +
                   `Jäänlähtö: <span class="tooltip-value">${formatDate(d.meltDate)}</span><br/>` +
-                  `Jääpeitekauden kesto: <span class="tooltip-value">${durationDays}</span>`)
+                  `Jääpeitekauden kesto: <span class="tooltip-value">${d.duration}</span>`)
         .style('left', (event.pageX + 10) + 'px')
         .style('top', (event.pageY - 28) + 'px');
-      
+
       lineGroup.select('line')
         .attr('stroke', 'darkblue');
     })
@@ -214,7 +211,7 @@ processedData.forEach(d => {
       tooltip.transition()
         .duration(500)
         .style('opacity', 0);
-      
+
       lineGroup.select('line')
         .attr('stroke', '#2196F3');
     });

@@ -11,7 +11,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "parse-cvs": "node utils/parce-cvs-to-json.ts"
+    "parse-csv": "node utils/parce-cvs-to-json.ts"
   },
   "devDependencies": {
     "@fast-csv/parse": "^5.0.2",
