@@ -85,10 +85,10 @@ stream.end();
 
 // count some useful stats
 function stats(data: FinalJson) {
-  console.log('earliestFroze: 25.10,1891')
-  console.log('latestFroze: 26.2.2020')
-  console.log('earliestMelt: 9.4.2020')
-  console.log('latestMelt: 17.6.1867')
+  // console.log('earliestFroze: 25.10,1891')
+  // console.log('latestFroze: 26.2.2020')
+  // console.log('earliestMelt: 9.4.2020')
+  // console.log('latestMelt: 17.6.1867')
 
   const frozeArr: Date[] = []
   const meltArr: Date[] = []
@@ -104,6 +104,7 @@ function stats(data: FinalJson) {
 
 
   function sortByMonthAndDate(dates) {
+    // Compare months using the custom order
     const months = [8, 9, 10, 11, 12, 1, 2, 3, 4, 5, 6, 7]
     const sortedDates = [...dates].sort((a, b) => {
       const monthA = a.getMonth() + 1; // getMonth() returns 0-11, so add 1
@@ -111,26 +112,19 @@ function stats(data: FinalJson) {
       const dateA = a.getDate();
       const dateB = b.getDate();
 
-      // Compare months using the custom order
       const monthIndexA = months.indexOf(monthA);
       const monthIndexB = months.indexOf(monthB);
 
       if (monthIndexA !== monthIndexB) {
         return monthIndexA - monthIndexB;
       }
-
       // If months are the same, compare by date
       return dateA - dateB;
     });
-    //   works
     return [sortedDates.at(0), sortedDates.at(-1)]
   }
 
-  function calculateAverageOfDates(dates: Date[] | number[]): Date | number {
-    if (typeof dates[0] === 'number') {
-      // @ts-ignore
-      return (dates.reduce((sum, date) => sum + date, 0)) / dates.length;
-    }
+  function calculateAverageOfDates(dates: Date[]): Date {
     // @ts-ignore
     const totalMilliseconds: number = dates.reduce((sum, date) => sum + date.getTime(), 0);
     const averageMilliseconds = totalMilliseconds / dates.length;
@@ -140,7 +134,7 @@ function stats(data: FinalJson) {
   const averages = {
     froze: calculateAverageOfDates(frozeArr),
     melt: calculateAverageOfDates(meltArr),
-    duration: calculateAverageOfDates(durationArr),
+    duration: Math.round(durationArr.reduce((a, b) => a + b, 0) / durationArr.length),
   }
 
   // get indices for finalJson
@@ -159,7 +153,6 @@ function stats(data: FinalJson) {
   return {
     shortestIceDuration: data[shortestDurationIndex],
     longestIceDuration: data[longestDurationIndex],
-    meanIceDuration: durationArr.reduce((a, b) => a + b, 0) / durationArr.length,
     earliestFroze: finalJson[frozIdx1],
     latestFroze: finalJson[frozIdx2],
     earliestMelt: finalJson[meltIdx1],
