@@ -174,9 +174,6 @@ processedData.forEach(d => {
   );
   const normalizedMelt = new Date(2001, d.meltDate.getMonth(), d.meltDate.getDate());
 
-  // Calculate duration in days
-  const durationDays = Math.round((d.meltDate.getTime() - d.freezeDate.getTime()) / (1000 * 60 * 60 * 24));
-
   // Create a group for the line and circles
   const lineGroup = svg.append('g');
 
@@ -217,7 +214,7 @@ processedData.forEach(d => {
     tooltip.html(`Talvi <span class="tooltip-value">${year}-${year+1}</span><br/>` +
                 `Jäätyminen: <span class="tooltip-value">${formatDate(d.freezeDate)}</span><br/>` +
                 `Jäänlähtö: <span class="tooltip-value">${formatDate(d.meltDate)}</span><br/>` +
-                `Jääpeitekauden kesto: <span class="tooltip-value">${durationDays}</span>`)
+                `Jääpeitekauden kesto: <span class="tooltip-value">${d.duration}</span>`)
       .style('left', (event.pageX + 10) + 'px')
       .style('top', (event.pageY - 28) + 'px');
 
