@@ -84,4 +84,6 @@ dialog > span {
 
 dialog > a {
   color: black;
+  text-decoration: none;
+  outline: none;
 }
