@@ -68,7 +68,20 @@ text {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
 }
 
-a {
+a, .kohokohdat {
     color: #2196F3;
     text-decoration: underline;
+}
+
+.kohokohdat {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+dialog > span {
+  float: right;
+}
+
+dialog > a {
+  color: black;
 }

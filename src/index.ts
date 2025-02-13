@@ -1,9 +1,10 @@
 import './index.css' with { type: 'css' }
 import dataset from './dates.json' with { type: 'json' }
+import stats from './stats.json' with { type: 'json' }
 import * as d3 from 'd3'
 
 // for console testing
-window.dataset = dataset
+// window.dataset = dataset
 
 interface IceData {
     "Talvi": string;
@@ -69,11 +70,21 @@ svg.append('text')
 // Add subtitle (data source)
 svg.append('text')
   .attr('class', 'chart-subtitle')
-  .attr('x', width / 2)
+  .attr('x', width / 1.25)
   .attr('y', -margin.top + 65)
   .attr('text-anchor', 'middle')
   .style('font-size', '14px')
   .html('data: <a href="https://www.jarviwiki.fi/wiki/N%C3%A4sij%C3%A4rvi_(yhd.)/Ymp%C3%A4rist%C3%B6hallinnon_havaintopaikka_(Naistenlahti)" target="_blank">järviwiki</a>');
+
+// Add modal button
+svg.append('text')
+  .attr('class', 'chart-subtitle kohokohdat')
+  .attr('x', width / 6)
+  .attr('y', -margin.top + 65)
+  .attr('text-anchor', 'middle')
+  .style('font-size', '14px')
+  .text('kohokohdat')
+
 
 // Create scales
 const yScale = d3.scaleLinear()
@@ -203,36 +214,61 @@ processedData.forEach(d => {
       tooltip.transition()
         .duration(200)
         .style('opacity', 1);
-      tooltip.html(`Talvi <span class="tooltip-value">${year}-${year+1}</span><br/>` +
-                  `Jäätyminen: <span class="tooltip-value">${formatDate(d.freezeDate)}</span><br/>` +
-                  `Jäänlähtö: <span class="tooltip-value">${formatDate(d.meltDate)}</span><br/>` +
-                  `Jääpeitekauden kesto: <span class="tooltip-value">${durationDays}</span>`)
-        .style('left', (event.pageX + 10) + 'px')
-        .style('top', (event.pageY - 28) + 'px');
+    tooltip.html(`Talvi <span class="tooltip-value">${year}-${year+1}</span><br/>` +
+                `Jäätyminen: <span class="tooltip-value">${formatDate(d.freezeDate)}</span><br/>` +
+                `Jäänlähtö: <span class="tooltip-value">${formatDate(d.meltDate)}</span><br/>` +
+                `Jääpeitekauden kesto: <span class="tooltip-value">${durationDays}</span>`)
+      .style('left', (event.pageX + 10) + 'px')
+      .style('top', (event.pageY - 28) + 'px');
 
-      lineGroup.select('line')
-        .attr('stroke', 'darkblue');
-    })
-    .on('mouseout', () => {
-      tooltip.transition()
-        .duration(500)
-        .style('opacity', 0);
+    lineGroup.select('line')
+      .attr('stroke', 'darkblue');
+  })
+  .on('mouseout', () => {
+    tooltip.transition()
+      .duration(500)
+      .style('opacity', 0);
 
-      lineGroup.select('line')
-        .attr('stroke', '#2196F3');
-    });
+    lineGroup.select('line')
+      .attr('stroke', '#2196F3');
+  });
 });
 
 // Add labels
 svg.append('text')
-  .attr('transform', 'rotate(-90)')
-  .attr('y', 0 - margin.left)
-  .attr('x', 0 - (height / 2))
-  .attr('dy', '1em')
-  .style('text-anchor', 'middle')
-  .text('Vuosi');
+.attr('transform', 'rotate(-90)')
+.attr('y', 0 - margin.left)
+.attr('x', 0 - (height / 2))
+.attr('dy', '1em')
+.style('text-anchor', 'middle')
+.text('Vuosi');
 
 svg.append('text')
-  .attr('transform', `translate(${width/2}, ${height + margin.bottom - 10})`)
-  .style('text-anchor', 'middle')
-  .text('Kuukausi');
+.attr('transform', `translate(${width/2}, ${height + margin.bottom - 10})`)
+.style('text-anchor', 'middle')
+.text('Kuukausi');
+
+
+// modal event listeners
+const dialog = document.querySelector('dialog') as HTMLDialogElement
+dialog?.addEventListener('click', _e => {
+dialog.close()
+})
+const kohokohdat = document.querySelector('.kohokohdat')
+kohokohdat?.addEventListener('click', _e => {
+dialog.showModal()
+})
+
+dialog.innerHTML = `
+  Aikaisin jäätyminen: <span class="stats">${stats.earliestFroze.Jäätyminen}</span></br>
+  Myöhäisin jäätyminen: <span class="stats">${stats.latestFroze.Jäätyminen}</span></br>
+  Aikaisin jäänlähtö: <span class="stats">${stats.earliestMelt.Jäänlähtö}</span></br>
+  Myöhäisin jäänlähtö: <span class="stats">${stats.latestMelt.Jäänlähtö}</span></br>
+  Pisin jäässäolo: <span class="stats">&ensp;${stats.longestIceDuration.Jääpeitekauden_kesto} päivää talvella ${stats.longestIceDuration.Talvi}</span></br>
+  <a target="_blank" href="https://uusikielemme.fi/finnish-grammar/finnish-cases/interesting-inflection/finnish-superlative-of-adjectives-superlatiivi#comment-654">Lyhyin</a> jäässäolo: <span class="stats">${stats.shortestIceDuration.Jääpeitekauden_kesto} päivää talvella ${stats.shortestIceDuration.Talvi}</span></br>
+  Keskiarvot:</br>
+  &ensp; Jäätyminen: <span class="stats">${stats.averages.froze}</span></br>
+  &ensp; Jäänlähtö: <span class="stats">${stats.averages.melt}</span></br>
+  &ensp; Jäässäolo: <span class="stats">${stats.averages.duration} päivää</span></br>
+`
+

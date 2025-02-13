@@ -19,9 +19,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
-
-    /* import .ts */
-    "allowImportingTsextensions": true
   },
   "include": ["src"]
 }
