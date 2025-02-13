@@ -78,6 +78,12 @@ a, .kohokohdat {
   cursor: pointer;
 }
 
+dialog {
+  /* prevent odd line break/jump on mobile */
+  white-space: pre-line;
+  line-height: 0.8em;
+}
+
 dialog > span {
   float: right;
 }
