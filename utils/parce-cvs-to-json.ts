@@ -2,7 +2,6 @@ import fs from 'node:fs'
 import path from 'node:path'
 import { parse } from '@fast-csv/parse'
 import * as d3 from 'd3'
-// import parseDate from './parse-date.ts'
 
 
 const exampleData = {
@@ -34,6 +33,20 @@ type FinalJson = Array<FinalObject>
 type Parsed = keyof typeof exampleData | {}
 const parsedCsv: Parsed = {}
 const finalJson: FinalJson = []
+
+type Stats = {
+  earliestFroze: FinalObject,
+  latestFroze: FinalObject,
+  earliestMelt: FinalObject,
+  latestMelt: FinalObject,
+  shortestIceDuration: FinalObject,
+  longestIceDuration: FinalObject,
+  averages: {
+    froze: string,
+    melt: string,
+    duration: number,
+  }
+}
 
 type Row = {
   Talvi: string
@@ -76,19 +89,26 @@ const stream = parse<Row, ReturnRow>({ headers: true, delimiter: ';', ignoreEmpt
         finalJson.push(fixed)
       }
     })
-    // fs.writeFileSync(path.join(process.cwd(), 'src', 'dates.json'), JSON.stringify(finalJson, null, 2))
-    // console.log('parsed & written to src/dates.json')
+    fs.writeFileSync(path.join(process.cwd(), 'src', 'dates.json'), JSON.stringify(finalJson, null, 2))
+    console.log('parsed & written to src/dates.json')
     console.log('counting stats...')
-    const ss = stats(finalJson)
-    console.log('stats:', ss)
+    const finalStats = stats(finalJson)
+    fs.writeFileSync(path.join(process.cwd(), 'src', 'stats.json'), JSON.stringify(finalStats, null, 2))
+    console.log('stats written to src/stats.json')
   })
 
+console.log('parsing cvs to json...')
 const csv = fs.readFileSync(path.join(process.cwd(), 'utils', 'dates.csv'), 'utf8')
 stream.write(csv)
 stream.end();
 
 // count some useful stats
-function stats(data: FinalJson) {
+function stats(data: FinalJson): Stats {
+  // uncomment if you want to check your data
+  // console.log('earliestFroze: 25.10,1891')
+  // console.log('latestFroze: 26.2.2020')
+  // console.log('earliestMelt: 9.4.2020')
+  // console.log('latestMelt: 17.6.1867')
   function indexDate(data: FinalObject, type: string):  number {
     const [d, m, y] = data[type].split('.')
     let year: string | number = data.Talvi.split('-')[0]
@@ -104,8 +124,8 @@ function stats(data: FinalJson) {
   const latestMelt = d3.maxIndex(data, d => indexDate(d, 'Jäänlähtö'))
   const shortestDuration = d3.minIndex(data, d => Number(d.Jääpeitekauden_kesto))
   const longestDuration = d3.maxIndex(data, d => Number(d.Jääpeitekauden_kesto))
-  const avgFroze = d3.mean(data, d => indexDate(d, 'Jäätyminen'))
-  const avgMelt = d3.mean(data, d => indexDate(d, 'Jäänlähtö'))
+  const avgFroze = d3.mean(data, d => indexDate(d, 'Jäätyminen')) as number
+  const avgMelt = d3.mean(data, d => indexDate(d, 'Jäänlähtö')) as number
 
   return {
     earliestFroze: data[earliestFroze],
@@ -115,90 +135,10 @@ function stats(data: FinalJson) {
     shortestIceDuration: data[shortestDuration],
     longestIceDuration: data[longestDuration],
     averages: {
-      froze: avgFroze,
-      melt: avgMelt,
+      froze: `${new Date(avgFroze).getDate()}.${new Date(avgFroze).getMonth() + 1}`,
+      melt: `${new Date(avgMelt).getDate()}.${new Date(avgMelt).getMonth() + 1}`,
       duration: Math.round(data.reduce((a, b) => a + Number(b.Jääpeitekauden_kesto), 0) / data.length),
     }
   }
 }
-
-
-//==========================================
-// earlier own solution before d3, counting same results though 😁🤗
-// function earlyStats(data: FinalJson) {
-  // console.log('earliestFroze: 25.10,1891')
-  // console.log('latestFroze: 26.2.2020')
-  // console.log('earliestMelt: 9.4.2020')
-  // console.log('latestMelt: 17.6.1867')
-
-//   const frozeArr: Date[] = []
-//   const meltArr: Date[] = []
-//   const durationArr: number[] = []
-//   for (const d of data) {
-//     // const frozeDate = parseDate(d.Jäätyminen)
-//     const [fday, fmonth, fyear] = d.Jäätyminen.split('.')
-//     const [mDay, mMonth, mYear] = d.Jäänlähtö.split('.')
-//     frozeArr.push(new Date(`${fyear}-${fmonth}-${fday}`))
-//     meltArr.push(new Date(`${mYear}-${mMonth}-${mDay}`))
-//     durationArr.push(Number(d.Jääpeitekauden_kesto))
-//   }
-
-
-//   function sortByMonthAndDate(dates) {
-//     // Compare months using the custom order
-//     const months = [8, 9, 10, 11, 12, 1, 2, 3, 4, 5, 6, 7]
-//     const sortedDates = [...dates].sort((a, b) => {
-//       const monthA = a.getMonth() + 1; // getMonth() returns 0-11, so add 1
-//       const monthB = b.getMonth() + 1;
-//       const dateA = a.getDate();
-//       const dateB = b.getDate();
-
-//       const monthIndexA = months.indexOf(monthA);
-//       const monthIndexB = months.indexOf(monthB);
-
-//       if (monthIndexA !== monthIndexB) {
-//         return monthIndexA - monthIndexB;
-//       }
-//       // If months are the same, compare by date
-//       return dateA - dateB;
-//     });
-//     return [sortedDates.at(0), sortedDates.at(-1)]
-//   }
-
-//   function calculateAverageOfDates(dates: Date[]): Date {
-//     // @ts-ignore
-//     const totalMilliseconds: number = dates.reduce((sum, date) => sum + date.getTime(), 0);
-//     const averageMilliseconds = totalMilliseconds / dates.length;
-//     return new Date(averageMilliseconds);
-//   }
-
-//   const averages = {
-//     froze: calculateAverageOfDates(frozeArr),
-//     melt: calculateAverageOfDates(meltArr),
-//     duration: Math.round(durationArr.reduce((a, b) => a + b, 0) / durationArr.length),
-//   }
-
-//     // get indices for finalJson
-//     const froze = sortByMonthAndDate(frozeArr)
-//     const frozIdx1 = frozeArr.indexOf(froze[0])
-//     const frozIdx2 = frozeArr.indexOf(froze[1])
-//     const melt = sortByMonthAndDate(meltArr)
-//     const meltIdx1 = meltArr.indexOf(melt[0])
-//     const meltIdx2 = meltArr.indexOf(melt[1])
-
-//     const longestDuration: number = Math.max(...durationArr)
-//     const shortestDuration: number = Math.min(...durationArr)
-//     const longestDurationIndex: number = durationArr.indexOf(longestDuration)
-//     const shortestDurationIndex: number = durationArr.indexOf(shortestDuration)
-
-//     return {
-//       shortestIceDuration: data[shortestDurationIndex],
-//       longestIceDuration: data[longestDurationIndex],
-//       earliestFroze: finalJson[frozIdx1],
-//       latestFroze: finalJson[frozIdx2],
-//       earliestMelt: finalJson[meltIdx1],
-//       latestMelt: finalJson[meltIdx2],
-//       averages
-//     }
-// }
 

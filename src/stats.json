@@ -1,0 +1,43 @@
+{
+  "earliestFroze": {
+    "Talvi": "1891-1892",
+    "Jäätyminen": "25.10.1891",
+    "Jäänlähtö": "20.5.1892",
+    "Jääpeitekauden_kesto": "207"
+  },
+  "latestFroze": {
+    "Talvi": "2019-2020",
+    "Jäätyminen": "26.2.2020",
+    "Jäänlähtö": "9.4.2020",
+    "Jääpeitekauden_kesto": "42"
+  },
+  "earliestMelt": {
+    "Talvi": "2019-2020",
+    "Jäätyminen": "26.2.2020",
+    "Jäänlähtö": "9.4.2020",
+    "Jääpeitekauden_kesto": "42"
+  },
+  "latestMelt": {
+    "Talvi": "1866-1867",
+    "Jäätyminen": "11.12.1866",
+    "Jäänlähtö": "17.6.1867",
+    "Jääpeitekauden_kesto": "188"
+  },
+  "shortestIceDuration": {
+    "Talvi": "2019-2020",
+    "Jäätyminen": "26.2.2020",
+    "Jäänlähtö": "9.4.2020",
+    "Jääpeitekauden_kesto": "42"
+  },
+  "longestIceDuration": {
+    "Talvi": "1891-1892",
+    "Jäätyminen": "25.10.1891",
+    "Jäänlähtö": "20.5.1892",
+    "Jääpeitekauden_kesto": "207"
+  },
+  "averages": {
+    "froze": "15.12",
+    "melt": "8.5",
+    "duration": 144
+  }
+}
