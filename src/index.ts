@@ -58,13 +58,9 @@ const svg = d3.select('#d3-wrapper')
   .append('g')
   .attr('transform', `translate(${margin.left},${margin.top})`);
 
-// Add title
-svg.append('text')
-  .attr('class', 'chart-title')
-  .attr('x', width / 2)
-  .attr('y', -margin.top + 35)
-  .attr('text-anchor', 'middle')
-  .style('font-size', '20px')
+// Add title, h1 outside svg, center with css
+d3.select('body').insert('h1', '#d3-wrapper')
+  .attr('class', 'chart-title title')
   .text(`Näsijärven jäätyminen ja jäänlähtö ${earliestYear} - ${latestYear}`);
 
 // Add subtitle (data source)
