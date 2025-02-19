@@ -58,16 +58,15 @@ const svg = d3.select('#d3-wrapper')
   .append('g')
   .attr('transform', `translate(${margin.left},${margin.top})`);
 
-// Add title, h1 outside svg, center with css
-d3.select('body').insert('h1', '#d3-wrapper')
-  .attr('class', 'chart-title title')
+// Add title text
+d3.select('h1')
   .text(`Näsijärven jäätyminen ja jäänlähtö ${earliestYear} - ${latestYear}`);
 
 // Add subtitle (data source)
 svg.append('text')
   .attr('class', 'chart-subtitle')
-  .attr('x', width / 1.25)
-  .attr('y', -margin.top + 65)
+  .attr('x', width / 1.29)
+  .attr('y', -margin.top + 60)
   .attr('text-anchor', 'middle')
   .style('font-size', '14px')
   .html('data: <a href="https://www.jarviwiki.fi/wiki/N%C3%A4sij%C3%A4rvi_(yhd.)/Ymp%C3%A4rist%C3%B6hallinnon_havaintopaikka_(Naistenlahti)" target="_blank">järviwiki</a>');
@@ -76,11 +75,10 @@ svg.append('text')
 svg.append('text')
   .attr('class', 'chart-subtitle kohokohdat')
   .attr('x', width / 6)
-  .attr('y', -margin.top + 65)
+  .attr('y', -margin.top + 60)
   .attr('text-anchor', 'middle')
   .style('font-size', '14px')
   .text('kohokohdat')
-
 
 // Create scales
 const yScale = d3.scaleLinear()
