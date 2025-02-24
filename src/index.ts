@@ -209,7 +209,7 @@ processedData.forEach(d => {
                 `Jäätyminen: <span class="tooltip-value">${formatDate(d.freezeDate)}</span><br/>` +
                 `Jäänlähtö: <span class="tooltip-value">${formatDate(d.meltDate)}</span><br/>` +
                 `Jääpeitekauden kesto: <span class="tooltip-value">${d.duration}</span>`)
-      .style('left', (event.pageX + 10) + 'px')
+      .style('left', (event.offsetX + 10) + 'px')
       .style('top', (event.pageY - 28) + 'px');
 
     lineGroup.select('line')
